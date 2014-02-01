@@ -80,37 +80,6 @@ void bc_destroy_node (bt_node* node)
 	free(node);
 }
 
-/* TC: You Don't need this, looks like it's from a QuadTree implementation. :P */
-
-/* struct point { */
-/* 	int x;		/*left pointer*/
-/* 	int y;		/*right pointer*/
-
-/* 	x = <y;		/*left is smaller than right*/ 
-/* 	y = >x;		/*right is larger than left*/	
-/* } */
-
-/* TC: Don't worry about his stuff yet, although you've got the gist of the left/right */
-/* split by the looks of it :) */
-
-/* struct node  	/*pseudo insert-node function*/ 
-/* { */
-/* if node == 0;		/*if node is null, enter the value and insert left and right pointers*/ 
-/* 	{ */
-/* 	leaf value = key_value;	 */
-/* 	left leaf = 0; */
-/* 	right leaf = 0; */
-/* 	} */
-/* else if key_value < leaf value;	/*otherwise if value is smaller than node, insert value left*/ 
-/* 	{ */
-/* 	insert key &leaf left; */
-/* 	} */
-/* 	{ */
-/* else if key_value > leaf value;	/*otherwise if value is larger than node, insert value right*/ 
-/* 	insert key &leaf right; */
-/* 	} */
-/* } */
-
 
 
 
