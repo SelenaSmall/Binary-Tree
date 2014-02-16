@@ -53,6 +53,18 @@ void bc_add_node(bt_node* root, bt_node* node)
     }
 }
 
+bt_node* bc_find_node(bt_node* root, int value)
+{
+	if(root == NULL) return NULL;
+	if(root->key == value) return root;
+	if(value > root->key)
+	{
+		return bc_find_node(node->right, value);
+	} else {
+		return bc_find_node(node->left, value);
+	}
+}
+
 /* TC: The actual function implementations */
 bt_node* bc_create_node (int key, void* value)
 {
