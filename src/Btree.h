@@ -15,6 +15,8 @@ typedef struct bt_node	/*define the structure with key, value left & right*/
 } bt_node;
 
 /* TC: These declare the functions so you can use them. */
-bt_node* bc_create_node (int key, void* value);	 
+bt_node* bc_create_node (int key, void* value);
+bt_node* bc_find_node(bt_node* root, int value);	 
 void bc_destroy_node (bt_node* node);
 void bc_add_node(bt_node* root, bt_node* node);
+void bc_print_tree(bt_node* root);
